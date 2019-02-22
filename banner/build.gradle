@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
-version = "1.4.10"
+version = "1.5-snapshot"
 
 android {
     compileSdkVersion 28
@@ -10,7 +10,7 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 28
-        versionCode 41
+        versionCode 42
         versionName version
     }
     buildTypes {
@@ -30,9 +30,9 @@ dependencies {
 }
 
 
-def siteUrl = 'https://github.com/youth5201314/banner' // 项目的主页
-def gitUrl = 'https://github.com/youth5201314/banner.git' // Git仓库的url
-group = "com.youth.banner" //一般填你唯一的包名
+def siteUrl = 'https://github.com/deltaguita/banner' // 项目的主页
+def gitUrl = 'https://github.com/deltaguita/banner.git' // Git仓库的url
+group = "github.com.deltaguita" //一般填你唯一的包名
 //gradlew bintrayUpload
 install {
     repositories.mavenInstaller {
